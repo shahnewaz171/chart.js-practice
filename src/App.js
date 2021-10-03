@@ -1,6 +1,8 @@
 import './App.css';
 import BarChart from './components/BarChart';
+import DoughnutChart from './components/DoughnutChart';
 import LineChart from './components/LineChart';
+import PieChart from './components/PieChart';
 import RadarChart from './components/RadarChart';
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
       <div>
           {/* <BarChart /> */}
           {/* <LineChart /> */}
-          <RadarChart />
+          {/* <RadarChart /> */}
+          {/* <PieChart /> */}
+          <DoughnutChart />
       </div>
   );
 }
