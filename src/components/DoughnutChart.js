@@ -1,17 +1,18 @@
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
+import './Doughnut.css';
 
 const DoughnutChart = () => {
 
     return (
-        <div>
-            <Doughnut 
+        <div className="chartContainer">
+            <Doughnut
                 data={{
                     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
                     datasets: [
                         {
                             label: '# of Votes',
-                            data: [65, 59, 80, 81, 56, 55, 40],
+                            data: [65, 59, 80, 56, 55, 40],
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
                                 'rgba(54, 162, 235, 0.2)',
@@ -36,26 +37,37 @@ const DoughnutChart = () => {
                 width={600}
                 options={{
                     maintainAspectRatio: false,
-                    scales: {
-                        yAxis: [
-                            {
-                                ticks: {
-                                    beginAtZero: true
-                                }
-                            }
-                        ]
-                    },
                     plugins: {
                         legend: {
                             labels: {
+                                display: true,
+                                backgroundColor: '#ccc',
+                                borderRadius: 3,
                                 font: {
-                                    size: 18
+                                    color: 'red',
+                                    weight: 'bold',
                                 }
+                            },
+                            doughnutlabel: {
+                                labels: [{
+                                    text: '550',
+                                    font: {
+                                        size: 20,
+                                        weight: 'bold'
+                                    }
+                                }, {
+                                    text: 'total'
+                                }]
                             }
                         }
                     }
+
                 }}
             />
+            <div className="chartInner">
+                <div className="chartDaysRemaining">120</div>
+                <div className="chartDaysLabel">Days left</div>
+            </div>
         </div>
     );
 };
