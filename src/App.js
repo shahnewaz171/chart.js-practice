@@ -1,19 +1,15 @@
 import './App.css';
-import BarChart from './components/BarChart';
-import DoughnutChart from './components/DoughnutChart';
 import LineChart from './components/LineChart';
-import PieChart from './components/PieChart';
-import RadarChart from './components/RadarChart';
 
 function App() {
 
   return (
       <div>
           {/* <BarChart /> */}
-          {/* <LineChart /> */}
+          <LineChart />
           {/* <RadarChart /> */}
           {/* <PieChart /> */}
-          <DoughnutChart />
+          {/* <DoughnutChart /> */}
       </div>
   );
 }

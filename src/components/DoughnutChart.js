@@ -37,31 +37,6 @@ const DoughnutChart = () => {
                 width={600}
                 options={{
                     maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            labels: {
-                                display: true,
-                                backgroundColor: '#ccc',
-                                borderRadius: 3,
-                                font: {
-                                    color: 'red',
-                                    weight: 'bold',
-                                }
-                            },
-                            doughnutlabel: {
-                                labels: [{
-                                    text: '550',
-                                    font: {
-                                        size: 20,
-                                        weight: 'bold'
-                                    }
-                                }, {
-                                    text: 'total'
-                                }]
-                            }
-                        }
-                    }
-
                 }}
             />
             <div className="chartInner">
