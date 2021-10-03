@@ -1,9 +1,11 @@
 import './App.css';
+import BarChart from './components/BarChart';
 
 function App() {
+
   return (
       <div>
-        <h1>Hello</h1>
+          <BarChart />
       </div>
   );
 }
