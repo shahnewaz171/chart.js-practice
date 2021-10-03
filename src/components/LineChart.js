@@ -41,8 +41,8 @@ const LineChart = () => {
                             ],
                             borderColor: 'rgb(75, 192, 192)',
                             borderWidth: 1,
-                            pointBorderWidth: 4,
                             pointBorderColor: ["red", "blue", "yellow", "green", "purple", "orange"],
+                            pointBorderWidth: 4,
                         }
                     ]
                 }}
